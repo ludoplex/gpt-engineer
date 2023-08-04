@@ -25,8 +25,8 @@ def chat(
         project_path = str(pathlib.Path(__file__).parent / "example")
 
     input_path = project_path
-    memory_path = pathlib.Path(project_path) / (run_prefix + "memory")
-    workspace_path = pathlib.Path(project_path) / (run_prefix + "workspace")
+    memory_path = pathlib.Path(project_path) / f"{run_prefix}memory"
+    workspace_path = pathlib.Path(project_path) / f"{run_prefix}workspace"
 
     ai = AI(
         model=model,
